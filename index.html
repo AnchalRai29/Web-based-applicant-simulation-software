@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Applicant Simulation Software</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="overlay">
+    <div class="container">
+      <h2>Applicant Simulation Software</h2>
+
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" class="input-field" placeholder="Enter your full name">
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" class="input-field" placeholder="Enter your email address">
+
+      <label for="roles">Select Position Applying For:</label>
+      <select id="roles" class="dropdown">
+        <option value="Software Developer">Software Developer</option>
+        <option value="Data Analyst">Data Analyst</option>
+        <option value="UX Designer">UX Designer</option>
+        <option value="Project Manager">Project Manager</option>
+        <option value="System Administrator">System Administrator</option>
+      </select>
+
+      <label for="experience">Years of Experience:</label>
+      <input type="number" id="experience" class="input-field" placeholder="Enter your years of experience">
+
+      <label>Job Preferences (Check All That Apply):</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" id="remote"> Remote Work</label>
+        <label><input type="checkbox" id="onsite"> Onsite Work</label>
+        <label><input type="checkbox" id="flexible"> Flexible Hours</label>
+      </div>
+
+      <button class="button" onclick="submitApplication()">Submit Application</button>
+
+      <div id="output" class="output"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
